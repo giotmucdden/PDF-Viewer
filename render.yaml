@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: pdf-viewer
+    name: TL_Music_Viewer
     runtime: node
     buildCommand: npm install && cd client && npm install && npm run build
     startCommand: npm start
