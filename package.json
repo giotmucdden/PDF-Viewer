@@ -1,0 +1,20 @@
+{
+  "name": "band-pdf-viewer",
+  "version": "1.0.0",
+  "description": "Lightweight real-time music sheet viewer for live band performances",
+  "private": true,
+  "scripts": {
+    "dev:server": "node server/index.js",
+    "dev:client": "cd client && npx vite --host 0.0.0.0",
+    "build:client": "cd client && npx vite build",
+    "start": "NODE_ENV=production node server/index.js",
+    "setup": "npm install && cd client && npm install"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.8.0"
+  }
+}
